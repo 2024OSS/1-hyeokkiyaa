@@ -1,13 +1,10 @@
-/* style1.css */
 
-/* 기본 설정 */
 body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
 }
 
-/* 전체 레이아웃 설정 */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -16,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* 내부 요소들 설정 */
 .wrapper {
     display: flex;
     flex: 1;
@@ -24,7 +20,6 @@ body {
     overflow: hidden;
 }
 
-/* 상단 영역 */
 #top {
     background-color: #04aa6d;
     color: #ffffff;
@@ -34,16 +29,15 @@ body {
     text-align: center;
 }
 
-/* 메뉴바 설정 */
+
 #menubar {
-    width: 200px;
-    background-color: #343a40;
+    width: 200px; 
     color: white;
     padding: 10px;
     margin-right: 10px;
 }
 
-/* 메뉴 리스트 스타일 */
+
 #menulist {
     list-style-type: none;
     padding: 0;
@@ -70,21 +64,20 @@ body {
     color: #04AA6D;
 }
 
-/* 메인 컨텐츠 설정 */
+
 #main {
     flex: 1;
     padding: 10px;
-    margin-left: 220px; /* menubar의 너비 + 여백 */
-    margin-right: 210px; /* sidebar의 너비 */
+    margin-left: 220px; 
+    margin-right: 210px; 
 }
 
-/* 사이드바 설정 */
 #sidebar {
     background-color: #32a4e7;
     color: #ffffff;
     padding: 10px;
     width: 180px;
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -92,7 +85,6 @@ body {
     margin: 4px 0;
 }
 
-/* 하단 영역 설정 */
 #bottom {
     border: 1px solid #d4d4d4;
     background-color: #f1f1f1;
@@ -104,7 +96,6 @@ body {
     margin-top: 10px;
 }
 
-/* 링크 스타일 */
 a {
     color: #000000;
     text-decoration: underline;
@@ -112,28 +103,4 @@ a {
 
 a:hover {
     text-decoration: none;
-}
-
-/* 미디어 쿼리 (반응형 디자인) */
-@media (max-width: 800px) {
-    #sidebar {
-        width: auto;
-        position: relative;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #main {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    #menubar {
-        width: auto;
-        float: none;
-    }
-    #main {
-        margin: 0;
-    }
 }
