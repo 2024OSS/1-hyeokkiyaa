@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    min-width: 900px;
+    overflow-x: 900px;
 }
 
 .wrapper {
