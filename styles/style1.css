@@ -26,12 +26,12 @@ body {
 
 #menubar {
     width: 200px;
-    float: left;
+    float: left
 }
 
 #main {
     padding: 10px;
-    margin-left: 210px;
+    margin: 0 210px;
 }
 
 #sidebar {
@@ -39,10 +39,10 @@ body {
     color: #ffffff;
     padding: 10px;
     width: 180px;
-    position: absolute;
-    right: 0;
-    top: 0;
     bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
 }
 
 #bottom {
@@ -72,9 +72,9 @@ body {
 }
 
 .menuitem:first-child {
-    background-color: #04AA6D;
-    color: white;
-    font-weight: bold;
+   background-color:#04AA6D;
+   color: white;
+   font-weight:bold;
 }
 
 a {
@@ -84,24 +84,4 @@ a {
 
 a:hover {
     text-decoration: none;
-}
-
-@media (max-width: 800px) {
-    #sidebar {
-        width: auto;
-        position: relative;
-    } 
-    #main {
-        margin-left: 0;
-    }    
-}
-
-@media (max-width: 600px) {
-    #menubar {
-        width: auto;
-        float: none;
-    }
-    #main {
-        margin-left: 0;
-    }    
 }
