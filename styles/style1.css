@@ -1,162 +1,50 @@
-.wrapper {
-    position: relative;
-    overflow: auto;
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-body{
+body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
+}
+
+.container {
+    max-width: 1200px; /* Ensuring container width */
+    margin: 0 auto; /* Centering the container */
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden; /* Clearing floats */
 }
 
 #top {
     background-color: #04aa6d;
     color: #ffffff;
     padding: 15px;
-}
-
-#top, #sidebar, #bottom, .menuitem {
     border-radius: 4px;
-    margin: 4px;
+    margin: 4px 0;
 }
 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-@media (max-width: 600px) {
-    #menubar {
-        width: auto;
-        float: none;
-    }
-}
-
-#top h1, #top p, #menulist {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
-.menuitem:first-child {
-    background-color: #04AA6D;
-    color: white;
-    font-weight: bold;
-}
-
-.menuitem {
-    background-color: #f1f1f1;
-    border: 1px solid #d4d4d4;
-    list-style-type: none;
-    padding: 2px;
-    cursor: pointer;
-}
-#top, #sidebar, #bottom, .menuitem {
-    border-radius: 4px;
-    margin: 4px;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
+#menubar {
+    width: 200px; /* Fixed width for menubar */
+    float: left;
+    margin-right: 10px; /* Margin to separate it from main */
 }
 
 #main {
     padding: 10px;
+    margin-left: 220px; /* Offset by menubar's width + margin */
+    margin-right: 210px; /* Offset for sidebar's width */
 }
 
-@media (max-width: 600px) {
-    #main {
-        margin: 0;
-    }
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-a {
-    color: #000000;
-    text-decoration: underline;
-}
-
-a:-webkit-any-link {
-    cursor: pointer;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-@media (max-width: 800px) {
-    #sidebar {
-        width: auto;
-        position: relative;
-    }
-}
 #sidebar {
     background-color: #32a4e7;
     color: #ffffff;
     padding: 10px;
-    width: 180px;
-    bottom: 0;
+    width: 180px; /* Fixed width for sidebar */
+    position: absolute;
     top: 0;
     right: 0;
-    position: absolute;
-}
-#top, #sidebar, #bottom, .menuitem {
+    bottom: 0;
     border-radius: 4px;
-    margin: 4px;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
+    margin: 4px 0;
 }
 
 #bottom {
@@ -166,4 +54,63 @@ h3 {
     padding: 10px;
     font-size: 70%;
     line-height: 14px;
+    clear: both; /* Clear floats to prevent overlapping */
+    margin-top: 10px;
+}
+
+ul {
+    padding-inline-start: 40px;
+}
+
+.menuitem {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 4px 0;
+}
+
+.menuitem:first-child {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+    color: #04AA6D;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }
 }
