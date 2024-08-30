@@ -1,18 +1,22 @@
+body {
+    height: 26vh;
+}
+
 #mainheader ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 #mainheader li {
-    text-align: center; 
+    text-align: center;
 }
 
 #mainheader a {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 10px 20px;
     display: inline-block;
 }
@@ -20,23 +24,39 @@
 #mainheader .subscribe {
     text-align: left;
     color: #333;
-    
 }
+
+#menu ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    text-align: left; 
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.5px solid #333;
+    padding-bottom: 10px;
+}
+
 
 #mainheader .pohang-times {
     text-decoration: none;
     color: black;
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif
+        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    ;
     font-size: 2.25rem;
 }
 
 #mainheader .sign-up {
     text-decoration: none;
-    text-align: right; 
-    color: #666; 
-    background-color: #ffffff; 
+    text-align: right;
+    color: #666;
+    background-color: #ffffff;
     border-radius: 5px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border: 1px solid #666;
 }
 
@@ -45,9 +65,88 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: auto;
-
+    height: 100%;
 }
 
 header {
     border-bottom: 0.5px solid gray;
+}
+
+#mainnews {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    background-color: #d3d3d3;
+}
+
+#mainnewsletter {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+#mainnews h1 {
+    
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+#mainnewsletter p {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 1.25rem;
+    font-weight: 300;
+
+}
+
+#mainnewsletter a {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif
+        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    ;
+}
+
+#subnews1 {
+    width: 45%;
+    float: left;
+    border: 1px solid #666;
+    height: 100%;
+}
+
+#subnews2 {
+    width: 45%;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid #666;
+    height: 100%;
+}
+
+#subnews {
+    margin-left: 3%;
+    height: 170px;
+    padding-top: 5%;
+}
+
+#subnews #contents{
+    float: left; 
+    width: 50%;   
+}
+
+#subnews #thumbnail{
+    float: left;  
+    width: 50%;
+    height: 100%;
+    background-color: #666;
+    text-align: center;
+    line-height: 800%;
 }
