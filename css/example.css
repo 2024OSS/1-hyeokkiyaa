@@ -1,5 +1,5 @@
 body {
-    height: 26vh;
+    height: 35;
 }
 
 #mainheader ul {
@@ -146,5 +146,5 @@ h6 {
     height: 100%;
     background-color: #666;
     text-align: center;
-    line-height: 900%;
+    line-height: 1.5;
 }
