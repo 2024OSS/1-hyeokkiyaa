@@ -1,5 +1,7 @@
 body {
-    height: 26vh;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
 }
 
 #mainheader ul {
@@ -30,7 +32,7 @@ body {
     list-style: none;
     justify-content: space-between;
     display: flex;
-    text-align: left; 
+    text-align: left;
 }
 
 #menu {
@@ -40,13 +42,10 @@ body {
     padding-bottom: 10px;
 }
 
-
 #mainheader .pohang-times {
     text-decoration: none;
     color: black;
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif
-        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-    ;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: 2.25rem;
 }
 
@@ -73,23 +72,33 @@ header {
 }
 
 #mainnews {
+    display: flex;
     margin-top: 10px;
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #d3d3d3;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; 
 }
 
 #mainnewsletter {
-    float: left;
-    padding-top: 20px;
-    padding-left: 30px;
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+#mainnewsblank {
+    flex: 1;
 }
 
 #mainnews h1 {
-    
     font-size: calc(1.475rem + 2.7vw);
     font-weight: 300;
     line-height: 1.2;
+    margin: 0;
+    overflow-wrap: break-word; 
 }
 
 #mainnewsletter p {
@@ -97,12 +106,14 @@ header {
     margin-bottom: 1rem !important;
     font-size: 1.25rem;
     font-weight: 300;
-
+    overflow-wrap: break-word; 
 }
 
 #mainnewsletter a {
     font-size: 1.5rem;
     color: #333;
+    text-decoration: none;
+    overflow-wrap: break-word; 
 }
 
 h1,
@@ -111,16 +122,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif
-        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-    ;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 #subnews1 {
     width: 45%;
     float: left;
     border: 1px solid #666;
-    height: 100%;
+    height: auto; 
+    overflow: hidden;
 }
 
 #subnews2 {
@@ -128,25 +138,35 @@ h6 {
     float: left;
     margin-left: 3%;
     border: 1px solid #666;
-    height: 100%;
+    height: auto; 
+    overflow: hidden;
 }
 
 #subnews {
     margin-left: 3%;
-    height: 170px;
+    height: auto; 
     padding-top: 5%;
 }
 
-#subnews #contents{
-    float: left; 
-    width: 50%;   
+#subnews #contents {
+    float: left;
+    width: 50%;
+    overflow-wrap: break-word;
 }
 
-#subnews #thumbnail{
-    float: left;  
+#subnews #thumbnail {
+    float: left;
     width: 50%;
     height: 100%;
     background-color: #666;
     text-align: center;
-    line-height: 800%;
+    line-height: 1.5; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+#mainnewsletter a {
+    text-decoration: underline;
 }
