@@ -30,7 +30,7 @@ body {
     list-style: none;
     justify-content: space-between;
     display: flex;
-    text-align: left; 
+    text-align: left;
 }
 
 #menu {
@@ -86,7 +86,7 @@ header {
 }
 
 #mainnews h1 {
-    
+
     font-size: calc(1.475rem + 2.7vw);
     font-weight: 300;
     line-height: 1.2;
@@ -111,9 +111,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif
-        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-    ;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 #subnews1 {
@@ -137,16 +135,16 @@ h6 {
     padding-top: 5%;
 }
 
-#subnews #contents{
-    float: left; 
-    width: 50%;   
+#subnews #contents {
+    float: left;
+    width: 50%;
 }
 
-#subnews #thumbnail{
-    float: left;  
+#subnews #thumbnail {
+    float: left;
     width: 50%;
     height: 100%;
     background-color: #666;
     text-align: center;
-    line-height: 800%;
+    line-height: 900%;
 }
